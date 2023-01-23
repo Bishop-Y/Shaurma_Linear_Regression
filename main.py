@@ -24,7 +24,7 @@ print()
 
 #################################
 print("b)")
-print(f"\tqsh_i = {a:.4f}{b:.4f} * psh_i")
+print(f"\tqsh_i = {a:.4f} {'-' if b < 0 else '+'} {abs(b):.4f} * psh_i")
 print()
 
 #################################
