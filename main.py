@@ -45,6 +45,6 @@ print("d)")
 r_sq = model.score(x, y)
 print(f"\tr_sq = {r_sq:.4f}")
 
-k = 1  # одна независимая переменная в модели
+k = len(data.columns) - 1  # количество регрессеров
 r_sq_adj = 1 - (1 - r_sq) * ((n - 1) / (n - k - 1))
 print(f"\tr_sq_adj = {r_sq_adj:.4f}")
